@@ -1,1 +1,1 @@
-#a personal website project by @stucombs
+a personal website project by @stucombs
