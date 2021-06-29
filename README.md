@@ -1,3 +1,3 @@
 a personal website project by @stucombs
 
-[stucombs.com](stucombs.com)
+[stucombs.com](https://www.stucombs.com)
