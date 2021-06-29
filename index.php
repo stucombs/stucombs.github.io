@@ -9,6 +9,11 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="description" content="A professional website by Stu Combs">
+		<meta name="keywords" content="Developer, CV, Combs, Stuart, Stu, Job, Hire, Web Developer">
+		<meta name="author" content="stucombs">
 		<title id="page_title">Welcome to Stu Combs' Website</title>
 		<link href="./fontawesome/css/all.min.css" rel="stylesheet" /> <!--load all styles-->
 		<link href="./bootstrap-4/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,7 +35,8 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<span class='inline-text' style='font-size: 30px;'>I a a full stack web developer from Indianapolis, Indiana. Most of my past and current work is in Linux, Apache, Mysql and PHP stacks with React.js frontend and experience in Amazon Web Services. <!--Currently, I work as a developer for <i><span class="external-link">BCforward</span></i> on a project for the Indiana Prosecuting Attorneys Council, building and maintaining the case management system used throughout the entire state.--> <br/><br> Raised in the Hoosier state, I graduated with an Informatics Degree from the School of Informatics and Computing at Indiana University Bloomington. Outside of developing, I enjoy videogames, spending my time at the gym or trying a new beer.<br/><br/></span>
+					<span class='inline-text' style='font-size: 30px;'>I a a full stack web developer from Indianapolis, Indiana. Most of my past and current work is in Linux, Apache, MySQL and PHP stacks with React.js frontend and experience in Amazon Web Services.
+						<br/><br> Raised in the Hoosier state, I graduated with an Informatics Degree from the School of Informatics and Computing at Indiana University Bloomington. Outside of developing, I enjoy videogames, spending my time at the gym or trying a new beer.<br/><br/></span>
 				</div>
 			</div>
 			<div class="row">
