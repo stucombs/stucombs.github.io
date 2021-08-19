@@ -1,2 +1,3 @@
 .DS_STORE
-sftp-config.json
+deployment-config.json
+.git
