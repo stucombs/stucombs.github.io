@@ -125,6 +125,10 @@ input:checked + .slider:before {
 	cursor: pointer;
 }
 
+.status-button {
+	cursor: pointer;
+}
+
 /*footer*/
 .footer {
 	position: fixed;

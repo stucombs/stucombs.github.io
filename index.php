@@ -1,8 +1,8 @@
 <?php
 	//REDIRECT TO HTTPS IF CONNECTING OVER PORT 80 [HTTP]
-	// if($_SERVER['SERVER_PORT'] === '80'){
-	// 	header('Location: https://stucombs.com');
-	// }
+	if($_SERVER['SERVER_PORT'] !== '443'){
+		header('Location: https://stucombs.com');
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,11 +29,7 @@
 					<span class="inline-text large"><b>Hello.</b></span>
 				</div>
 				<div class="col-xl-2" align="right">
-					<label class="switch" title="Click to toggle light/dark mode">
-						<input type="checkbox" id="display_mode_checkbox" name="display_mode_checkbox" checked onchange="onSwitchMode()" />
-						<span class="slider"></span>
-					</label>
-					<i class="fas fa-adjust fa-2x" style="vertical-align: middle;"></i>
+					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()" title="Toggle view mode"></i>
 				</div>
 			</div>
 			<div class="row spacer">
@@ -60,23 +56,27 @@
 				<div class="col-xl-12" align="center">
 					<i class="fab fa-linkedin fa-3x external-icon" style="color: #0F77B5;" onclick="window.open('https://linkedin.com/in/combsstuart')" title="https://linkedin.com/in/combsstuart"></i><span style="font-size: 45px">&nbsp;&nbsp;|
 						&nbsp;&nbsp;</span><i class="fab fa-github fa-3x external-icon" onclick="window.open('https://github.com/stucombs')" title='https://github.com/stucombs'></i><span style="font-size: 45px">&nbsp;&nbsp;|
-						&nbsp;&nbsp;</span><a href="mailto:stuart.combs@att.net"><i class="far fa-envelope fa-3x external-icon" title="Contact Stu"></i></a>
+						&nbsp;&nbsp;</span><a href="mailto:stu.combs@icloud.com"><i class="far fa-envelope fa-3x external-icon" title="Email Stu"></i></a>
 				</div>
 			</div>
 		</div>
+		<!-- JAVASCRIPT -->
 		<script>
 			let light_mode = true;
 			function onSwitchMode(){
 				if( light_mode ){
 					document.getElementById('page_main_body').classList.add('light-mode');
 					document.getElementById('page_main_body').classList.remove('dark-mode');
+					document.getElementById('view_mode_status').className = "fas fa-sun fa-2x status-button";
 				}else{
 					document.getElementById('page_main_body').classList.add('dark-mode');
 					document.getElementById('page_main_body').classList.remove('light-mode');
+					document.getElementById('view_mode_status').className = "far fa-moon fa-2x status-button";
 				}
 				light_mode = !light_mode
 			}
 		</script>
+		<!-- END MAIN PAGE INCLUDE FOOTER -->
 		<?php include_once('includes/footer.php'); ?>
 	</body>
 </html>
