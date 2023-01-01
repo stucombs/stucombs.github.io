@@ -1,4 +1,4 @@
 .DS_STORE
-deployment-config.json
+*-config.json
 .git
 fontawesome/*
