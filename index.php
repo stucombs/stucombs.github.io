@@ -27,7 +27,7 @@
 					<span class="inline-text large"><b>Hello.</b></span>
 				</div>
 				<div class="col-xl-2" align="right">
-					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()" title="Toggle view mode"></i>
+					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()"></i>
 				</div>
 			</div>
 			<div class="row spacer">
@@ -46,15 +46,20 @@
 					</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-12" align="center" style="padding-top: 3%;">
+				<div class="col-xl-12" align="left" style="padding-top: 3%;">
 					<span class="inline-text small">Find me around the web</span>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-12" align="center">
-					<i class="fab fa-linkedin fa-3x external-icon" style="color: #0F77B5;" onclick="window.open('https://linkedin.com/in/combsstuart')" title="https://linkedin.com/in/combsstuart"></i>
-					<span style="font-size: 45px">&nbsp;|&nbsp;</span>
-					<i class="fab fa-github fa-3x external-icon" onclick="window.open('https://github.com/stucombs')" title='https://github.com/stucombs'></i><span style="font-size: 45px">
+				<div class="col-xl-12" align="left">
+					<i class="fab fa-linkedin fa-3x external-icon linkedin" id="linkedin" onclick="window.open('https://linkedin.com/in/combsstuart')">
+						<label for="linkedin" class="icon-label">LinkedIn</label>
+					</i>
+					<span class="hor-spacer"></span>
+					<i class="fab fa-github fa-3x external-icon github" id="github" onclick="window.open('https://github.com/stucombs')">
+						<label for="github" class="icon-label">GitHub</label>
+					</i>
+					<span style="font-size: 45px">
 				</div>
 			</div>
 		</div>

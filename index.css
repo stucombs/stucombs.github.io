@@ -52,6 +52,10 @@ body {
 	padding-bottom: 3%;
 }
 
+.hor-spacer {
+	padding-left: 2%;
+}
+
 .large {
 	font-size: var(--large-text);
 }
@@ -76,6 +80,51 @@ body {
 .status-button {
 	cursor: pointer;
 	color: var(--second-text);
+}
+
+.linkedin:hover .icon-label {
+	display: inline;
+}
+
+.icon-label {
+	position: absolute;
+	left: 0;
+	bottom: -27px;
+	font-size: 17px;
+	padding: 3px;
+	background-color: var(--second-text);
+	color: var(--bg-color);
+	font-weight: 500;
+	border-radius: 5px;
+	display: none;
+}
+
+.icon-label:after,
+.icon-label:before {
+	left: 100%;
+	top: 17%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.icon-label:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: var(--second-text);
+	border-width: 8px;
+	margin-top: -18px;
+	margin-left: -40px;
+}
+
+.github:hover .icon-label {
+	display: inline;
+}
+
+.github .icon-label {
+	left: 80px;
 }
 
 /* FOOTER */
