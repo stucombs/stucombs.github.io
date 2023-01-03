@@ -27,7 +27,9 @@
 					<span class="inline-text large"><b>Hello.</b></span>
 				</div>
 				<div class="col-xl-2" align="right">
-					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()"></i>
+					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()">
+						<label for="view_mode_status" class="toggle-label">Toggle View Mode</label>
+					</i>
 				</div>
 			</div>
 			<div class="row spacer">

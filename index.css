@@ -73,7 +73,6 @@ body {
 }
 
 .external-icon:hover {
-	animation-duration: 1;
 	font-size: 3.2em;
 }
 
@@ -125,6 +124,43 @@ body {
 
 .github .icon-label {
 	left: 80px;
+}
+
+.status-button:hover .toggle-label {
+	display: inline;
+}
+
+.toggle-label {
+	position: absolute;
+	right: -38px;
+	top: 43px;
+	font-size: 17px;
+	padding: 3px;
+	background-color: var(--second-text);
+	color: var(--bg-color);
+	font-weight: 500;
+	border-radius: 5px;
+	display: none;
+}
+
+.toggle-label:after,
+.toggle-label:before {
+	left: 71%;
+	top: 17%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.toggle-label:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: var(--second-text);
+	border-width: 8px;
+	margin-top: -18px;
+	margin-left: -39px;
 }
 
 /* FOOTER */
