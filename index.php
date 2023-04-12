@@ -1,7 +1,3 @@
-<?php
-	//REDIRECT TO HTTPS IF CONNECTING OVER PORT 80 [HTTP]
-	if($_SERVER['SERVER_PORT'] !== '443') header('Location: https://stucombs.com')
-?>
 <!DOCTYPE html>
 <html>
 	<head>
