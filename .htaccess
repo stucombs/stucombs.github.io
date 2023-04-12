@@ -1,4 +1,4 @@
-RewriteEngine on
-RewriteBase /
-RewriteCond %{HTTPD_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^stucombs\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.stucombs.com/$1 [R,L]
