@@ -62,9 +62,8 @@ body {
 	font-size: var(--small-text);
 }
 
-.external-icon:hover {
+.external-icon {
 	cursor: pointer;
-	font-size: 3.2em;
 }
 
 .status-button {
