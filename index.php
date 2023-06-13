@@ -24,7 +24,7 @@
 				</div>
 				<div class="col-xl-2" align="right">
 					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()">
-						<label for="view_mode_status" class="toggle-label">Toggle View Mode</label>
+						<!-- <label for="view_mode_status" class="toggle-label">Toggle View Mode</label> -->
 					</i>
 				</div>
 			</div>
@@ -51,11 +51,11 @@
 			<div class="row">
 				<div class="col-xl-12" align="left">
 					<i class="fab fa-linkedin fa-3x external-icon linkedin" id="linkedin" onclick="window.open('https://linkedin.com/in/combsstuart')">
-						<label for="linkedin" class="icon-label">LinkedIn</label>
+						<!-- <label for="linkedin" class="icon-label">LinkedIn</label> -->
 					</i>
 					<span class="hor-spacer"></span>
 					<i class="fab fa-github fa-3x external-icon github" id="github" onclick="window.open('https://github.com/stucombs')">
-						<label for="github" class="icon-label">GitHub</label>
+						<!-- <label for="github" class="icon-label">GitHub</label> -->
 					</i>
 					<span style="font-size: 45px">
 				</div>
