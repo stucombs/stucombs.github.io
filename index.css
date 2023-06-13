@@ -8,14 +8,14 @@
 
 html {
 	/* LIGHT MODE */
-	--bg-color: #BBD2C5;
+	--bg-color: rgb(255, 255, 255);
 	--text-color: #292E49;
 	--second-text: #536976;
 }
 
 html[dark] {
 	/* DARK MODE */
-	--bg-color: #18191A;
+	--bg-color: rgb(26, 24, 31);
 	--text-color: #E4E6EB;
 	--second-text: #B0B3B8;
 }
