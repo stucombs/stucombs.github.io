@@ -62,6 +62,10 @@ body {
 	font-size: var(--small-text);
 }
 
+.fa-regular, .far {
+	font-weight: 600;
+}
+
 .external-icon {
 	cursor: pointer;
 }

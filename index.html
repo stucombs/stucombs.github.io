@@ -10,7 +10,7 @@
 		<meta name="author" content="Stu Combs">
 		<title id="page_title">Welcome to Stu Combs' Website</title>
 		<!--load all styles-->
-		<link href="./fontawesome/css/all.min.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b9fe45a1a8.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type='text/css' href='./index.css' />
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet" />
 	</head>
@@ -22,7 +22,7 @@
 					<span class="inline-text large"><b>Hello.</b></span>
 				</div>
 				<div class="col-xl-2" align="right">
-					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-2x status-button" onclick="onSwitchMode()"></i>
+					<i id="view_mode_status" name="view_mode_status" class="far fa-moon fa-3x status-button" onclick="onSwitchMode()"></i>
 				</div>
 			</div>
 			<div class="row spacer">
@@ -54,8 +54,20 @@
 				</div>
 			</div>
 		</div>
+		<!-- END MAIN PAGE INCLUDE FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<span id="footer-text" name="footer-text" class="footer-text"></span>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- JAVASCRIPT -->
 		<script>
+			main();
+
 			let light_mode;
 			// On initial load determine default color scheme
 			if( window.matchMedia('(prefers-color-scheme: dark)').matches ) {
@@ -65,8 +77,8 @@
 				light_mode = true;
 				onSwitchMode();
 			}
-			
-			function onSwitchMode(){
+
+			function onSwitchMode() {
 				if( light_mode ){
 					document.documentElement.removeAttribute("dark");
 					document.getElementById('view_mode_status').className = "fas fa-sun fa-2x status-button";
@@ -76,8 +88,13 @@
 				}
 				light_mode = !light_mode
 			}
+
+			function main() {
+				const n = new Date();
+				document.getElementById("footer-text").innerHTML = `A website by Stu Combs &copy ${n.getFullYear()}`;
+			}
+			
+
 		</script>
-		<!-- END MAIN PAGE INCLUDE FOOTER -->
-		<?php include_once('includes/footer.php'); ?>
 	</body>
 </html>
