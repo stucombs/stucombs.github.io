@@ -37,9 +37,7 @@ body {
 
 .inline-text {
 	font-size: var(--default-text);
-	/*font-family: 'Source Sans Pro', sans-serif;*/
-	/*font-family: 'Raleway', sans-serif;*/
-	/*font-family: 'Source Code Pro', monospace;*/
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .spacer {
