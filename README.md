@@ -1,3 +1,5 @@
 a personal website project by @stucombs
 
-[stucombs.com](https://stucombs.com)
+Hosted with [Github Pages](https://pages.github.com/)
+
+[stucombs.github.io](https://https://stucombs.github.io/)
