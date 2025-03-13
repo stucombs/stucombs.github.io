@@ -2,10 +2,20 @@
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  // const main = (): void => {
+  //   const n = new Date();
+  //   console.log(`${n.getFullYear()}`);
+  // };
+
+  // const onSwitchMode = (): void => {
+
+  // };
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div className={styles.text}>
+        <div className={`${styles.text} ${styles.heavy}`}>
           Hello.
 			  </div>
         <div className={styles.text}>
