@@ -1,17 +1,7 @@
-// import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
 
 export default function Home() {
-
-  // const main = (): void => {
-  //   const n = new Date();
-  //   console.log(`${n.getFullYear()}`);
-  // };
-
-  // const onSwitchMode = (): void => {
-
-  // };
-
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -29,7 +19,15 @@ export default function Home() {
 				</div>
       </main>
       <footer className={styles.footer}>
-        <span>Find me around the web</span>
+        <div>Find me around the web</div>
+        <div style={{ display: "flex" }}>
+          <a href="https://github.com/stucombs" target="_blank" rel="noopener noreferrer">
+            <Image src="./github.svg" alt="Github" width={50} height={50} className="logo" />
+          </a>
+          <a href="https://linkedin.com/in/combsstuart" target="_blank" rel="noopener noreferrer">
+            <Image src="/linkedin.svg" alt="LinkedIn" width={50} height={50} className="logo" />
+          </a>
+        </div>
       </footer>
     </div>
   );
