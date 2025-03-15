@@ -5,6 +5,17 @@
   font-family: var(--font-geist-sans);
 }
 
+.header img {
+  position: absolute;
+  left: initial;
+  right: 180px;
+  top: 25px;
+}
+
+.header img:hover {
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -19,6 +30,10 @@
   margin-top: auto;
 }
 
+.footer div {
+  justify-content: space-evenly;
+}
+
 .text {
   font-size: 30px;
 }
@@ -27,19 +42,17 @@
   font-weight: 600;
 }
 
-.footer div {
-  justify-content: space-evenly;
+.logo-dark {
+  filter: invert(100%);
+  --webkit-filter: invert(100%);
 }
 
 @media (max-width: 600px) {
   .main {
     padding: 25px;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .footer img {
-    filter: invert(100%);
-    --webkit-filter: invert(100%);
+  .header img {
+    right: 25px;
   }
 }
