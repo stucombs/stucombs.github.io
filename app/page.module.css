@@ -23,28 +23,12 @@
   padding: 25px 180px 0px 180px;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: auto;
-}
-
-.footer div {
-  justify-content: space-evenly;
-}
-
 .text {
   font-size: 30px;
 }
 
 .heavy {
   font-weight: 600;
-}
-
-.logo-dark {
-  filter: invert(100%);
-  --webkit-filter: invert(100%);
 }
 
 @media (max-width: 600px) {

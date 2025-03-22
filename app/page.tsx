@@ -2,31 +2,53 @@
 
 import Image from 'next/image';
 import styles from './page.module.css';
-import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-  const [loaded, setLoaded] = useState(false);
+  const [theme, setTheme] = useState('');
 
+  const toggleTheme = (newTheme: string): void => {
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
+  
   const switchMode = (): void => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    if( theme === 'light' ){
+      toggleTheme('dark');
+    } else {
+      toggleTheme('light');
+    }
   };
 
   useEffect(() => {
-    setLoaded(true);
+    const getPreferredColorScheme = () => {
+      if( window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ) {
+        toggleTheme('dark');
+      } else {
+        toggleTheme('light');
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if( event.matches ) {
+          toggleTheme('dark');
+        } else {
+          toggleTheme('light');
+        }
+      });
+    };
+
+    getPreferredColorScheme();
   }, []);
   
   return (
-    <>
-    { loaded &&
       <div className={styles.page}>
         <header className={styles.header}>
             <div onClick={() => switchMode()}>
               { theme === 'light' ? (
                 <Image src="/light.svg" alt="Toggle Mode" width={40} height={40} />
               ) : (
-                <Image src="/moon.svg" alt="Toggle Mode" width={40} height={40} className={styles['logo-dark']} />
+                <Image src="/moon.svg" alt="Toggle Mode" width={40} height={40} className="logo-dark" />
               )}
             </div>
         </header>
@@ -44,7 +66,7 @@ export default function Home() {
             Raised in Indiana, I graduated with an Informatics Degree from the School of Informatics and Computing at Indiana University Bloomington. Outside of developing, I enjoy videogames, spending my time at the gym or trying a new beer.
           </div>
         </main>
-        <footer className={ styles.footer }>
+        <footer className="footer">
           <div>Find me around the web</div>
           <div style={{ display: "flex" }}>
             <a href="https://github.com/stucombs" target="_blank" rel="noopener noreferrer">
@@ -56,7 +78,5 @@ export default function Home() {
           </div>
         </footer>
       </div>
-    }
-    </>
   );
 };
