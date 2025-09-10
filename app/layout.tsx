@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
-import { Source_Sans_3 } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 
-const sourceSan3 = Source_Sans_3({
+const sans = Noto_Sans({
+  weight: '400',
   subsets: ['latin'],
+  variable: '--font-sans'
 });
 
 export const metadata: Metadata = {
@@ -17,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={sourceSan3.className}>
+    <html lang="en">
+      <body className={sans.variable}>
           {children}
       </body>
     </html>

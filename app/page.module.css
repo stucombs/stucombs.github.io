@@ -2,7 +2,6 @@
   display: grid;
   justify-items: center;
   min-height: 100svh;
-  font-family: var(--font-geist-sans);
 }
 
 .header img {
@@ -19,16 +18,17 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2em;
   padding: 25px 180px 0px 180px;
 }
 
 .text {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .heavy {
   font-weight: 600;
+  letter-spacing: 0.075em;
 }
 
 @media (max-width: 600px) {
