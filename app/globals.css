@@ -1,71 +1,55 @@
-:root {
-  color-scheme: light dark;
-  --background: light-dark(rgb(255, 255, 255), rgb(26, 24, 31));
-  --foreground: #292E49;
-}
-
-html[data-theme="light"] {
-  color-scheme: light;
-  --foreground: #292E49;
-}
-
-html[data-theme="light"] .footer img {
-  filter: invert(0);
-}
-
-html[data-theme="dark"] {
-  --background: rgb(26, 24, 31);
-  --foreground: #F1F0E9;
-}
-
-html[data-theme="dark"] .footer img {
-  filter: invert();
-}
-
-@media(prefers-color-scheme: dark) {
-  :root {
-    --background: rgb(26, 24, 31);
-    --foreground: #F1F0E9;
-  }
-
-  .footer img {
-    filter: invert();
-    --webkit-filter: invert();
-  }
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@import 'tailwindcss';
+@plugin 'daisyui' {
+  themes: dim --default
 }
 
 html,
 body {
+  padding: 0;
+  margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.footer {
+body p {
+  font-size: 26px;
+}
+
+main {
   display: flex;
   flex-direction: column;
+  gap: 2em;
+  padding: 100px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
   gap: 5px;
   margin-top: auto;
 }
-
-.footer div {
-  justify-content: space-evenly;
+.page-footer div {
+  justify-content: center;
+  gap: 1em;
 }
 
-.logo-dark {
+.intro {
+  font-weight: 600;
+  letter-spacing: 0.075em;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 40px;
+  }
+
+  body p {
+    font-size: 20px;
+  }
+}
+
+img {
   filter: invert();
-  --webkit-filter: invert();
 }

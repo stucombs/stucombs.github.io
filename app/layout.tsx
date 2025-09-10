@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Noto_Sans } from 'next/font/google';
+import { Atkinson_Hyperlegible_Mono } from 'next/font/google';
 import './globals.css';
 
-const sans = Noto_Sans({
+const sans = Atkinson_Hyperlegible_Mono({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-sans'
