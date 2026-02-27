@@ -1,6 +1,6 @@
 A personal website project by @stucombs
 
-Hosted with [Github Pages](https://pages.github.com/)
+Hosted with [Vercel](https://vercel.com/)
 
 Created with [Next.js](https://nextjs.org)
 
