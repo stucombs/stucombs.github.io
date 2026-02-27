@@ -1,9 +1,9 @@
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
-import { Atkinson_Hyperlegible_Mono } from 'next/font/google';
+import { Chakra_Petch } from 'next/font/google';
 import './globals.css';
 
-const sans = Atkinson_Hyperlegible_Mono({
+const sans = Chakra_Petch({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-sans'
