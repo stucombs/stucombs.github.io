@@ -11,7 +11,7 @@ const sans = Chakra_Petch({
 
 export const metadata: Metadata = {
   title: "Stu Combs' Website",
-  description: "A personal website project created with NextJS",
+  description: "A personal website project",
 };
 
 export default function RootLayout({
