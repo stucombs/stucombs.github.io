@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Home() {  
   return (
-    <div className="grid justify-items-center min-h-screen-svh">
-      <main className="main">
-        <p className="intro">Hello.</p>
+    <>
+      <main className="container">
+        <p className="bold">Hello.</p>
         <p>My name is Stu Combs.</p>
         <p>
           I am a full stack web developer from Chicago. Most of my past and current work is in PHP, Javascript, MySQL and Linux environments with React and Angular frontends and experience in Amazon Web Services.
@@ -15,7 +15,7 @@ export default function Home() {
       </main>
       <footer className="page-footer">
         <div>Find me around the web</div>
-        <div className="flex flex-row">
+        <div>
           <a href="https://github.com/stucombs" target="_blank" rel="noopener noreferrer">
             <Image src="./github.svg" alt="Github" width={50} height={50} className="logo" />
           </a>
@@ -24,6 +24,6 @@ export default function Home() {
           </a>
         </div>
       </footer>
-    </div>
+    </>
   );
 };

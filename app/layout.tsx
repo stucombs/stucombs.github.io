@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 import { Chakra_Petch } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
 
 const sans = Chakra_Petch({
   weight: '400',
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sans.variable}>
+      <body className={sans.variable} data-theme="dark">
           {children}
           <Analytics />
       </body>
