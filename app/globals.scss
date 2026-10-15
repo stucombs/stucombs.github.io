@@ -1,10 +1,11 @@
 @use "@picocss/pico/scss/pico";
 
-@mixin custom ($bg: rgb(46, 49, 49), $text: #f6f5da) {
+@mixin custom {
     color-scheme: dark;
+    background: linear-gradient(to right, rgb(46, 49, 49), #152331);
 
-  --pico-background-color: #{$bg};
-  --pico-color: #{$text};
+  --pico-background-color: rgb(46, 49, 49);
+  --pico-color: #f6f5da
 }
 
 :root[data-theme="dark"] {
@@ -13,8 +14,7 @@
 
 html,
 body {
-    padding: 1em;
-    margin: 1em;
+    padding: 2em 6em;
 }
 
 .page-footer {
@@ -34,4 +34,13 @@ body {
     font-weight: 600;
     letter-spacing: 0.075em;
     font-size: 26px;
+}
+
+
+// minimize padding on smaller devices
+@media (max-width: 600px) {
+    html,
+    body {
+        padding: 1em;
+    }
 }
