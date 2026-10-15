@@ -1,5 +1,16 @@
 @use "@picocss/pico/scss/pico";
 
+@mixin custom ($bg: rgb(46, 49, 49), $text: #f6f5da) {
+    color-scheme: dark;
+
+  --pico-background-color: #{$bg};
+  --pico-color: #{$text};
+}
+
+:root[data-theme="dark"] {
+    @include custom;
+}
+
 html,
 body {
     padding: 1em;

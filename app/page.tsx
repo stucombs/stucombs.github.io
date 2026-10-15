@@ -17,10 +17,10 @@ export default function Home() {
         <div>Find me around the web</div>
         <div>
           <a href="https://github.com/stucombs" target="_blank" rel="noopener noreferrer">
-            <Image src="./github.svg" alt="Github" width={50} height={50} className="logo" />
+            <Image src="./github.svg" alt="Github" width={50} height={50} />
           </a>
           <a href="https://linkedin.com/in/combsstuart" target="_blank" rel="noopener noreferrer">
-            <Image src="/linkedin.svg" alt="LinkedIn" width={50} height={50} className="logo" />
+            <Image src="/linkedin.svg" alt="LinkedIn" width={50} height={50} />
           </a>
         </div>
       </footer>

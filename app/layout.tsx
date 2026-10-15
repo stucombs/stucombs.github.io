@@ -10,8 +10,8 @@ const sans = Chakra_Petch({
 });
 
 export const metadata: Metadata = {
-  title: "Stu Combs' Website",
-  description: "A personal website project",
+  title: "Stu Combs' Page",
+  description: "A portfolio website",
 };
 
 export default function RootLayout({
@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={sans.variable} data-theme="dark">
+    <html lang="en" data-theme="dark">
+      <body className={sans.variable}>
           {children}
           <Analytics />
       </body>
